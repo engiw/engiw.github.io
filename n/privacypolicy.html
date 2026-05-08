@@ -4,42 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Nozomi</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background: #1a1a2e;
-            color: #c9cdd4;
-            line-height: 1.7;
-            padding: 2rem 1rem;
-        }
-        .container {
-            max-width: 780px;
-            margin: 0 auto;
-            background: #22223b;
-            border-radius: 12px;
-            padding: 2.5rem 3rem;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.4);
-        }
-        header { margin-bottom: 2rem; border-bottom: 1px solid #3a3a5c; padding-bottom: 1.25rem; }
-        header h1 { font-size: 1.75rem; color: #e0e0f0; }
-        header p { font-size: 0.9rem; color: #7c7c9c; margin-top: 0.25rem; }
-        h2 { font-size: 1.1rem; color: #a8a8d0; text-transform: uppercase; letter-spacing: 0.06em; margin: 2rem 0 0.6rem; }
-        p { margin-bottom: 0.75rem; }
-        ul { padding-left: 1.4rem; margin-bottom: 0.75rem; }
-        ul li { margin-bottom: 0.3rem; }
-        a { color: #7b8df5; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .notice {
-            background: #2a2a4a;
-            border-left: 3px solid #7b8df5;
-            border-radius: 4px;
-            padding: 0.75rem 1rem;
-            margin: 1.25rem 0;
-            font-size: 0.9rem;
-        }
-        footer { margin-top: 2.5rem; border-top: 1px solid #3a3a5c; padding-top: 1rem; font-size: 0.8rem; color: #5c5c7c; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="container">
@@ -58,18 +23,18 @@
     <p>
         Nozomi is a Discord bot that monitors Mudae bot activity inside your server. It
         tracks character claims, divorces, trades, gifts, roll counts, kakera values, wish-series
-        notifications, and auction listings. It also provides roll-reset reminders and optional
-        mini-games.
+        notifications, and auction listings. It also provides roll-reset reminders, image uploading
+        and cropping, colour generation, and fast searching of recent rolls.
     </p>
 
     <h2>Data we store</h2>
-    <p>The following information is persisted in the bot's database:</p>
+    <p>The following information is persisted in the bot's database and/or logs:</p>
     <ul>
         <li>Discord user snowflake IDs (to associate statistics and settings with a user).</li>
         <li>Discord channel and guild (server) snowflake IDs (to know where to send messages and where to listen).</li>
-        <li>Per-user Mudae statistics: roll counts, rolls since last wish, wish-series lists, and reminder preferences.</li>
+        <li>Per-user Mudae statistics: roll counts, rolls since last wish, wish-series lists, reminder preferences, etc.</li>
         <li>Per-guild configuration: tracking instance settings, enabled/disabled event types, log channel assignments, kakera-share channel and role IDs, and auction channel IDs.</li>
-        <li>Operational logs: usernames, guild names, and guild member counts for debugging purposes.</li>
+        <li>Operational logs for debugging: usernames, guild names, member counts, commands.</li>
     </ul>
 
     <h2>Data we process but do not store</h2>
@@ -95,7 +60,7 @@
 
     <h2>Security</h2>
     <p>
-        Data is stored in a private database on a private server. Backups are maintained
+        Data is stored in a private database on a virtual private server. Backups are maintained
         to guard against data loss. No passwords or payment information are ever collected.
     </p>
 
